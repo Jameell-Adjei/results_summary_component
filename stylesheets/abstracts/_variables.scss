@@ -1,0 +1,20 @@
+// Color Variables
+
+$percent: 85%;
+$white: #ffffff;
+$yellow: #FFB21E;
+$blue: #1125D6;
+$green: #00BB8F;
+$red: #FF5555;
+$dark_navy: #303B59;
+$light_blue: #CAC9FF;
+$very_light_blue: #ECF2FF;
+
+$yellow_white: color-mix(in oklab, rgba($white, 0.95) $percent, $yellow);
+$blue_white: color-mix(in oklab, rgba($white, 0.95) $percent, $blue);
+$green_white: color-mix(in oklab, rgba($white, 0.95) $percent, $green);
+$red_white: color-mix(in oklab, rgba($white, 0.95) $percent, $red);
+
+
+
+

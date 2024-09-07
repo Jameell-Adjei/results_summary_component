@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+div {
+  width: 1000px;
+  height: 600px;
+}
+
+#yellow {
+  background-color: #FFB21E;
+}
+
+#yellow_white {
+  background-color: color-mix(in oklab, rgba(255, 255, 255, 0.95) 85%, #FFB21E);
+}
+
+#blue {
+  background-color: #1125D6;
+}
+
+#blue_white {
+  background-color: color-mix(in oklab, rgba(255, 255, 255, 0.95) 85%, #1125D6);
+}
+
+#red {
+  background-color: #FF5555;
+}
+
+#red_white {
+  background-color: color-mix(in oklab, rgba(255, 255, 255, 0.95) 85%, #FF5555);
+}
+
+#green {
+  background-color: #00BB8F;
+}
+
+#green_white {
+  background-color: color-mix(in oklab, rgba(255, 255, 255, 0.95) 85%, #00BB8F);
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=styles.css.map */

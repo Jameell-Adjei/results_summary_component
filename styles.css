@@ -1,48 +1,74 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "HankenGrotesk";
 }
 
-div {
-  width: 1000px;
-  height: 600px;
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("../../assets/fonts/static/HankenGrotesk-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
-
-#yellow {
-  background-color: #FFB21E;
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("../../assets/fonts/static/HankenGrotesk-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
-
-#yellow_white {
-  background-color: color-mix(in oklab, rgba(255, 255, 255, 0.95) 85%, #FFB21E);
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("../../assets/fonts/static/HankenGrotesk-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
 }
-
-#blue {
-  background-color: #1125D6;
-}
-
-#blue_white {
-  background-color: color-mix(in oklab, rgba(255, 255, 255, 0.95) 85%, #1125D6);
-}
-
-#red {
-  background-color: #FF5555;
-}
-
-#red_white {
-  background-color: color-mix(in oklab, rgba(255, 255, 255, 0.95) 85%, #FF5555);
-}
-
-#green {
-  background-color: #00BB8F;
-}
-
-#green_white {
-  background-color: color-mix(in oklab, rgba(255, 255, 255, 0.95) 85%, #00BB8F);
-}
-
-body {
+#results {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(#7755FF 0, #6933FF 0, #272CE9 100%);
+  border-radius: 0% 0% 8% 8%;
+  color: white;
+}
+#results #your_results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+#results .results_title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #CAC9FF;
+}
+#results #results_data {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#4D21C9 0%, #2521C9 100%);
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#results #results_data #results_data_number {
+  font-weight: bolder;
+  font-size: 3.5rem;
+}
+#results .results-info {
+  text-align: center;
+}
+#results .results-info p {
+  max-width: 32ch;
+}
+#results .results-info h4 {
+  font-size: 1.5rem;
+  padding-bottom: 0.7rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

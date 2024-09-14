@@ -3,47 +3,6 @@
 
 
 @use './abstracts/variables';
+@use './abstracts/fonts';
 
-
-div {
-    width: 1000px;
-    height: 600px;
-}
-
-#yellow {
-    background-color: variables.$yellow;
-}
-
-#yellow_white {
-    background-color: variables.$yellow_white;
-}
-
-#blue {
-    background-color: variables.$blue;
-}
-
-#blue_white {
-    background-color: variables.$blue_white;
-}
-
-#red {
-    background-color: variables.$red;
-}
-
-#red_white {
-    background-color: variables.$red_white;
-}
-
-#green {
-    background-color: variables.$green;
-}
-
-#green_white {
-    background-color: variables.$green_white;
-}
-
-
-body {
-    display: flex;
-    flex-direction: row;
-}
+@use './components/score';

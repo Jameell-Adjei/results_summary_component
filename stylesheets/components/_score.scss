@@ -1,0 +1,58 @@
+@use '../abstracts/variables';
+
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(#7755FF 0, #6933FF 0, #272CE9 100%);
+    border-radius: 0% 0% 8% 8%;
+    color: white;
+
+    #your_results{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;   
+    }
+
+    .results_title {
+        font-weight: bold;
+        font-size: 18px;
+        color: variables.$light_blue;
+    }
+
+    #results_data {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(#4D21C9 0%, #2521C9 100%);//linear-gradient(#4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+
+        #results_data_number{
+            font-weight: bolder;
+            font-size: 3.5rem;
+        }
+
+    }
+
+    .results-info {
+        text-align: center;
+
+        p {
+            max-width: 32ch;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            padding-bottom: 0.7rem;
+        }
+    }
+}

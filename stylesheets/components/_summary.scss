@@ -1,0 +1,57 @@
+@use '../abstracts/variables';
+
+#summary {
+    padding: 1rem 42px;
+    .result_type {
+        display: flex;
+        justify-content: space-between;
+        height: 56px;
+        align-items: center;
+        border-radius: 12px;
+        padding: 0 10px;
+        margin: 1rem 0;
+        
+        .result_title {
+            display: flex;
+            gap: 20px
+        }
+        .result_percent {
+            display: flex;
+            gap: 0.25rem;
+
+            p {
+                color: rgba($color: variables.$dark_navy, $alpha: 0.5);
+                font-weight: bold;
+            }
+            p:nth-child(odd) {
+                color: variables.$dark_navy;
+            }
+
+        }
+        
+
+    }
+   
+}
+
+#reaction {
+    background-color: variables.$red_white;
+    p {
+        color: variables.$red;
+    }
+}
+
+#memory {
+    background-color: variables.$yellow_white;
+    p {
+        color: variables.$yellow;
+    }
+}
+#verbal {
+    background-color: variables.$green_white;
+    color: variables.$green
+}
+#visual {
+    background-color: variables.$blue_white;
+    color: variables.$blue
+}
